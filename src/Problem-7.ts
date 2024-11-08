@@ -8,21 +8,19 @@
     year: number;
 
     constructor(make: string, model: string, year: number) {
-      make = this.make;
-      model = this.model;
-      year = this.year;
+      this.make = make;
+      this.model = model;
+      this.year = year;
     }
 
-    getCarAge() {
-      console.log(this.year);
+    getCarAge(): string {
       const currentYear = new Date().getFullYear();
-      console.log(this.year);
-      return currentYear - this.year;
-    }
+      return `${
+        currentYear - this.year
+      } (assuming current year is ${currentYear})`;
+  }
   }
 
-  const carOnject = new Car("Honda", "Civic", 2018);
-  carOnject.getCarAge();
 
   // end
 }

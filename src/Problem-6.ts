@@ -3,10 +3,12 @@
   // problem 6
   interface Profile {
     name: string;
-    email: string;
     age: number;
+    email: string;
   }
 
-  const Profile = (user: Profile, updateData: object): object => {};
+  function updateProfile(profile: Profile, updates: Partial<Profile>): Profile {
+    return { ...profile, ...updates };
+  }
   // end
 }

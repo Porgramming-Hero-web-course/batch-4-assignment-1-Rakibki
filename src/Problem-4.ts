@@ -20,7 +20,8 @@
     } else if (shape.shape === "rectangle") {
       return shape.width * shape.height;
     }
-    return 0; 
+    return 0;
   }
+  
   // end
 }
