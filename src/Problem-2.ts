@@ -10,7 +10,7 @@
       }
     }
 
-    return filterArr.sort((a, b) => a - b);
+    return filterArr.sort((a: number, b: number) => a - b);
   };
 
   // end
